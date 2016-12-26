@@ -14,14 +14,17 @@ ui_*.h
 # Additional the CMake build folder
 bin/
 obj/
-*Debug/
-*Release/
+Debug/
+Release/
 ReleaseDebug/
 DebugFast/
 ReleaseDebugStatic/
 DebugFastStatic/
 build/
 Makefile
+build-*-Default/
+build-*-Debug/
+build-*-Release/
 
 # Externals folder
 externals/

@@ -3,7 +3,7 @@
 
 class CarPosition_t;
 
-#include "point.h"
+#include "Point.h"
 
 class CarPosition_t
 {

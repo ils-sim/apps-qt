@@ -3,7 +3,7 @@
 
 using namespace std;
 
-#include "user.h"
+#include "User.h"
 
 User_t::User_t(unsigned int _id, string _Name)
 {

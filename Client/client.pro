@@ -1,14 +1,15 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2016-12-26T17:37:59
+# Project created by QtCreator 2016-12-27T00:52:19
 #
 #-------------------------------------------------
 
-QT       -= core gui
+QT       += core gui
 
-TARGET = models
-TEMPLATE = lib
-CONFIG += staticlib
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+TARGET = client
+TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked as deprecated (the exact warnings
@@ -21,31 +22,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-SOURCES += car.cpp \
-    station.cpp \
-    point.cpp \
-    stationtype.cpp \
-    cartype.cpp \
-    carupdate.cpp \
-    carstatus.cpp \
-    carposition.cpp \
-    controlcenter.cpp \
-    user.cpp \
-    emergency.cpp
+LIBS += -L../common/lib -L../build -lcommon -lmodels -lplugins
+INCLUDEPATH += ../common/src/ ../models ../plugins
+DEPENDPATH += ../common/src/ ../models ../plugins
 
-HEADERS += car.h \
-    station.h \
-    point.h \
-    stationtype.h \
-    cartype.h \
-    carupdate.h \
-    carstatus.h \
-    carposition.h \
-    controlcenter.h \
-    user.h \
-    emergency.h
-unix {
-    target.path = /usr/lib
-    INSTALLS += target
-}
+SOURCES += main.cpp \
+    MainWindow.cpp
+
+HEADERS  += \
+    MainWindow.h
+
+FORMS    += \
+    MainWindow.ui
 

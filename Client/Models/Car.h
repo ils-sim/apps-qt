@@ -3,11 +3,13 @@
 
 class Car_t;
 
-#include "station.h"
-#include "cartype.h"
-#include "carupdate.h"
+#include "Station.h"
+#include "CarType.h"
+#include "CarUpdate.h"
 
-class Car_t
+#include "Model.h"
+
+class Car_t : public Model_t
 {
 public:
 	unsigned int id;
@@ -17,6 +19,7 @@ public:
 	boost::shared_ptr<CarUpdate_t> pLastUpdate;
 
 	Car_t(unsigned int _id, string _Callsign, boost::shared_ptr<Station_t> _pStation, boost::shared_ptr<CarType_t> _pType);
+	virtual ~Car_t();
 	string ToString();
 };
 

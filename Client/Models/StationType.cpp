@@ -3,7 +3,7 @@
 
 using namespace std;
 
-#include "stationtype.h"
+#include "StationType.h"
 
 StationType_t::StationType_t(unsigned int _id, string _Name)
 {

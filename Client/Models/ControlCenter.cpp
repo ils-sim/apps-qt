@@ -6,7 +6,7 @@ using namespace std;
 
 #include <boost/shared_ptr.hpp>
 
-#include "controlcenter.h"
+#include "ControlCenter.h"
 
 ControlCenter_t::ControlCenter_t(unsigned int _id, string _Name, boost::shared_ptr<list<Station_t>> _pStations)
 {

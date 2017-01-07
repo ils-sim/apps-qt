@@ -6,7 +6,7 @@ using namespace std;
 
 #include <boost/shared_ptr.hpp>
 
-#include "emergency.h"
+#include "Emergency.h"
 
 Emergency_t::Emergency_t(unsigned int _id, string _City, string _Street, unsigned int _StreetNumber, Point_t _Position,
 			/*DateTime _CallTime, DateTime _EndTime,*/ boost::shared_ptr<ControlCenter_t> _pCenter)

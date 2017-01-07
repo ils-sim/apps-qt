@@ -6,7 +6,7 @@ using namespace std;
 
 #include <boost/shared_ptr.hpp>
 
-#include "station.h"
+#include "Station.h"
 
 Station_t::Station_t(unsigned int _id, string _Name, Point_t _Position, boost::shared_ptr<StationType_t> _pType, boost::shared_ptr<list<Car_t>> _pCars)
 {

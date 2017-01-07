@@ -3,9 +3,9 @@
 
 class CarUpdate_t;
 
-#include "carstatus.h"
-#include "point.h"
-#include "emergency.h"
+#include "CarStatus.h"
+#include "Point.h"
+#include "Emergency.h"
 
 class CarUpdate_t
 {

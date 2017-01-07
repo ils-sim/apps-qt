@@ -1,12 +1,12 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2016-12-27T00:48:18
+# Project created by QtCreator 2016-12-26T17:37:59
 #
 #-------------------------------------------------
 
 QT       -= core gui
 
-TARGET = plugins
+TARGET = models
 TEMPLATE = lib
 CONFIG += staticlib
 
@@ -21,10 +21,33 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-SOURCES += plugininterface.cpp
+SOURCES += \
+    Car.cpp \
+    CarPosition.cpp \
+    CarStatus.cpp \
+    CarType.cpp \
+    CarUpdate.cpp \
+    ControlCenter.cpp \
+    Emergency.cpp \
+    Point.cpp \
+    Station.cpp \
+    StationType.cpp \
+    User.cpp
 
-HEADERS += plugininterface.h
+HEADERS += \
+    Car.h \
+    CarPosition.h \
+    CarStatus.h \
+    CarType.h \
+    CarUpdate.h \
+    ControlCenter.h \
+    Emergency.h \
+    Point.h \
+    Station.h \
+    StationType.h \
+    User.h
 unix {
     target.path = /usr/lib
     INSTALLS += target
 }
+

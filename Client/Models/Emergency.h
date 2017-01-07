@@ -3,8 +3,8 @@
 
 class Emergency_t;
 
-#include "point.h"
-#include "controlcenter.h"
+#include "Point.h"
+#include "ControlCenter.h"
 
 class Emergency_t
 {

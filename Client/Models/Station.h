@@ -3,9 +3,9 @@
 
 class Station_t;
 
-#include "point.h"
-#include "stationtype.h"
-#include "car.h"
+#include "Point.h"
+#include "StationType.h"
+#include "Car.h"
 
 class Station_t
 {

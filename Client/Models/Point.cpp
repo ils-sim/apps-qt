@@ -3,7 +3,7 @@
 
 using namespace std;
 
-#include "point.h"
+#include "Point.h"
 
 Point_t::Point_t(unsigned int _Latitude, unsigned int _Longitude)
 {

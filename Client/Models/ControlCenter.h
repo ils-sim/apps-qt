@@ -3,7 +3,7 @@
 
 class ControlCenter_t;
 
-#include "station.h"
+#include "Station.h"
 
 class ControlCenter_t
 {

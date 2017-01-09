@@ -20,7 +20,6 @@ Car_t::Car_t(unsigned int _id, string _Callsign, boost::shared_ptr<Station_t> _p
 
 Car_t::~Car_t()
 {
-
 }
 
 string Car_t::ToString()

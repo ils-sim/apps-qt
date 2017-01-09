@@ -1,13 +1,7 @@
 #ifndef STATION_H
 #define STATION_H
 
-class Station_t;
-
-#include "Point.h"
-#include "StationType.h"
-#include "Car.h"
-
-class Station_t
+class Station_t : public Model_t
 {
 public:
 	unsigned int id;
@@ -16,7 +10,10 @@ public:
 	boost::shared_ptr<StationType_t> pType;
 	boost::shared_ptr<list<Car_t>> pCars;
 
-	Station_t(unsigned int _id, string _Name, Point_t _Position, boost::shared_ptr<StationType_t> _pType, boost::shared_ptr<list<Car_t>> _pCars);
+	Station_t(unsigned int _id, string _Name, Point_t _Position, boost::shared_ptr<StationType_t> _pType,
+			  boost::shared_ptr<list<Car_t>> _pCars);
+	virtual ~Station_t();
+
 	string ToString();
 };
 

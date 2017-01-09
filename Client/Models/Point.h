@@ -1,7 +1,7 @@
 #ifndef POINT_H
 #define POINT_H
 
-class Point_t
+class Point_t : public Model_t
 {
 public:
 	double Latitude;
@@ -9,6 +9,8 @@ public:
 
 	Point_t(unsigned int _Latitude, unsigned int _Longitude);
 	Point_t();
+
+	virtual ~Point_t();
 
 	bool isZerro();
 	void setZerro();

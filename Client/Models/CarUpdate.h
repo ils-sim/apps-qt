@@ -1,13 +1,7 @@
 #ifndef CARUPDATE_H
 #define CARUPDATE_H
 
-class CarUpdate_t;
-
-#include "CarStatus.h"
-#include "Point.h"
-#include "Emergency.h"
-
-class CarUpdate_t
+class CarUpdate_t : Model_t
 {
 public:
 	//DateTime LastUpdate;
@@ -19,6 +13,8 @@ public:
 
 	CarUpdate_t(/*DateTime _LastUpdate,*/ boost::shared_ptr<CarStatus_t> _pStatus, Point_t _GoalPosition,
 				boost::shared_ptr<Emergency_t> _pEmergency, bool _BlueLight, bool _isServerStatus);
+
+	virtual ~CarUpdate_t();
 
 	string ToString();
 };

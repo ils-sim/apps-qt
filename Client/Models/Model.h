@@ -1,6 +1,15 @@
 #ifndef MODEL_H_
 #define MODEL_H_
 
+#include <string>
+#include <sstream>
+#include <list>
+
+using namespace std;
+
+#include <boost/shared_ptr.hpp>
+
+
 class Model_t
 {
 public:
@@ -72,5 +81,20 @@ public:
 private:
 	Model_Type_t mType;
 };
+
+// could not resolve this forward declaration, but it is working
+class Car_t;
+
+#include "Point.h"
+#include "CarPosition.h"
+#include "CarStatus.h"
+#include "CarType.h"
+#include "StationType.h"
+#include "Station.h"
+#include "ControlCenter.h"
+#include "Emergency.h"
+#include "CarUpdate.h"
+#include "Car.h"
+#include "User.h"
 
 #endif

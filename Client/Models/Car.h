@@ -1,14 +1,6 @@
 #ifndef CAR_H
 #define CAR_H
 
-class Car_t;
-
-#include "Station.h"
-#include "CarType.h"
-#include "CarUpdate.h"
-
-#include "Model.h"
-
 class Car_t : public Model_t
 {
 public:

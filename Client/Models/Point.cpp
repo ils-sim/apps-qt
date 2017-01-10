@@ -7,24 +7,20 @@ using namespace std;
 #include "Point.h"
 
 Point_t::Point_t(unsigned int _Latitude, unsigned int _Longitude)
-	: Model_t(POINT)
+	: Model_t(POINT), Latitude(_Latitude), Longitude(_Longitude)
 {
-	Latitude = _Latitude;
-	Longitude = _Longitude;
 }
 
 Point_t::Point_t()
-	: Model_t(POINT)
+	: Model_t(POINT), Latitude(0.0), Longitude(0.0)
 {
-	Latitude = 0.0;
-	Longitude = 0.0;
 }
 
 Point_t::~Point_t()
 {
 }
 
-bool Point_t::isZerro()
+bool Point_t::isZerro() const
 {
 	return Latitude == 0.0 && Longitude == 0.0;
 }
@@ -35,7 +31,7 @@ void Point_t::setZerro()
 	Longitude = 0.0;
 }
 
-string Point_t::ToString()
+string Point_t::ToString() const
 {
 	stringstream ss;
 	ss << "[Point: Latitude=" << Latitude << ", Longitude=" << Longitude << "]";

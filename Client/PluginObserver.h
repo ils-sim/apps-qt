@@ -6,16 +6,16 @@ class MainInterface_t;
 class PluginObserver_t
 {
 public:
-	explicit PluginObserver_t(string Name, MainInterface_t * interface);
+	explicit PluginObserver_t(string & Name, MainInterface_t * interface);
 
 	virtual void Received_Package(boost::shared_ptr<Model_t> pModel) = 0;
 
 	virtual ~PluginObserver_t();
-	
-	string getPluginName();
+
+	string getPluginName() const;
 
 protected:
-	MainInterface_t * GetInterface();
+	MainInterface_t * GetInterface() const;
 
 private:
 	MainInterface_t * mpInterface;

@@ -9,10 +9,9 @@ using namespace std;
 #include "MainInterface.h"
 #include "PluginObserver.h"
 
-PluginObserver_t::PluginObserver_t(string Name, MainInterface_t * interface)
+PluginObserver_t::PluginObserver_t(string & Name, MainInterface_t * interface)
+	: mpInterface(interface), mPluginName(Name)
 {
-	mPluginName = Name;
-	mpInterface = interface;
 	interface->Attache(this);
 }
 
@@ -20,12 +19,12 @@ PluginObserver_t::~PluginObserver_t()
 {
 }
 
-string PluginObserver_t::getPluginName()
+string PluginObserver_t::getPluginName() const
 {
 	return mPluginName;
 }
 
-MainInterface_t * PluginObserver_t::GetInterface()
+MainInterface_t * PluginObserver_t::GetInterface() const
 {
 	return mpInterface;
 }

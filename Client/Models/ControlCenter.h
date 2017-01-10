@@ -8,10 +8,10 @@ public:
 	string Name;
 	boost::shared_ptr<list<Station_t>> pStations;
 
-	ControlCenter_t(unsigned int _id, string _Name, boost::shared_ptr<list<Station_t>> _pStations);
+	ControlCenter_t(unsigned int _id, string & _Name, boost::shared_ptr<list<Station_t>> _pStations);
 	virtual ~ControlCenter_t();
 
-	string ToString();
+	string ToString() const;
 };
 
 #endif // CONTROLCENTER_H

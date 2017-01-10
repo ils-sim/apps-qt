@@ -7,10 +7,10 @@ public:
 	unsigned int id;
 	string Name;
 
-	StationType_t(unsigned int _id, string _Name);
+	StationType_t(unsigned int _id, string & _Name);
 	virtual ~StationType_t();
 
-	string ToString();
+	string ToString() const;
 };
 
 #endif // STATIONTYPE_H

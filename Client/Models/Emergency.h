@@ -13,11 +13,11 @@ public:
 	boost::shared_ptr<ControlCenter_t> pCenter;
 	//DateTime EndTime;
 
-	Emergency_t(unsigned int _id, string _City, string _Street, unsigned int _StreetNumber, Point_t _Position,
+	Emergency_t(unsigned int _id, string & _City, string & _Street, unsigned int _StreetNumber, Point_t & _Position,
 				/*DateTime _CallTime, DateTime _EndTime,*/ boost::shared_ptr<ControlCenter_t> _pCenter);
 	virtual ~Emergency_t();
 
-	string ToString();
+	string ToString() const;
 };
 
 #endif // EMERGENCY_H

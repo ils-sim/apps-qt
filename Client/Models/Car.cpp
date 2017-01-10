@@ -9,20 +9,16 @@ using namespace std;
 #include "Model.h"
 #include "Car.h"
 
-Car_t::Car_t(unsigned int _id, string _Callsign, boost::shared_ptr<Station_t> _pStation, boost::shared_ptr<CarType_t> _pType)
-	: Model_t(CAR)
+Car_t::Car_t(unsigned int _id, string & _Callsign, boost::shared_ptr<Station_t> _pStation, boost::shared_ptr<CarType_t> _pType)
+	: Model_t(CAR), id(_id), Callsign(_Callsign), pHomeStation(_pStation), pType(_pType)
 {
-	id = _id;
-	Callsign = _Callsign;
-	pHomeStation = _pStation;
-	pType = _pType;
 }
 
 Car_t::~Car_t()
 {
 }
 
-string Car_t::ToString()
+string Car_t::ToString() const
 {
 	stringstream ss;
 	ss << "[Car: id=" << id << ", Callsign=" << Callsign << ", Station=" << pHomeStation->ToString() << ", Type=" << pType->ToString();

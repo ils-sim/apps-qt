@@ -8,10 +8,10 @@ public:
 	string Name;
 	bool isSystemStatus;
 
-	CarStatus_t(unsigned int _id, string _Name, bool _isSystemStatus);
+	CarStatus_t(unsigned int _id, string & _Name, bool _isSystemStatus);
 	virtual ~CarStatus_t();
 
-	string ToString();
+	string ToString() const;
 };
 
 #endif // CARSTATUS_H

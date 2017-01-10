@@ -10,9 +10,9 @@ public:
 	boost::shared_ptr<CarType_t> pType;
 	boost::shared_ptr<CarUpdate_t> pLastUpdate;
 
-	Car_t(unsigned int _id, string _Callsign, boost::shared_ptr<Station_t> _pStation, boost::shared_ptr<CarType_t> _pType);
+	Car_t(unsigned int _id, string & _Callsign, boost::shared_ptr<Station_t> _pStation, boost::shared_ptr<CarType_t> _pType);
 	virtual ~Car_t();
-	string ToString();
+	string ToString() const;
 };
 
 #endif // CAR_H

@@ -12,10 +12,10 @@ public:
 
 	virtual ~Point_t();
 
-	bool isZerro();
+	bool isZerro() const;
 	void setZerro();
 
-	string ToString();
+	string ToString() const;
 };
 
 #endif // POINT_H

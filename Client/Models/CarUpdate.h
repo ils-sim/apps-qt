@@ -11,12 +11,12 @@ public:
 	bool BlueLight;
 	bool isServerStatus;
 
-	CarUpdate_t(/*DateTime _LastUpdate,*/ boost::shared_ptr<CarStatus_t> _pStatus, Point_t _GoalPosition,
+	CarUpdate_t(/*DateTime _LastUpdate,*/ boost::shared_ptr<CarStatus_t> _pStatus, Point_t & _GoalPosition,
 				boost::shared_ptr<Emergency_t> _pEmergency, bool _BlueLight, bool _isServerStatus);
 
 	virtual ~CarUpdate_t();
 
-	string ToString();
+	string ToString() const;
 };
 
 #endif // CARUPDATE_H

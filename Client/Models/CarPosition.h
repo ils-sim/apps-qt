@@ -7,10 +7,10 @@ public:
 	// DateTime Time;
 	Point_t Position;
 
-	CarPosition_t(Point_t _Position);
+	explicit CarPosition_t(Point_t & _Position);
 	virtual ~CarPosition_t();
 
-	string ToString();
+	string ToString() const;
 };
 
 #endif // CARPOSITION_H

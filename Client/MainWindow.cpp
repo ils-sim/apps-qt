@@ -1,4 +1,5 @@
 #include "MainWindow.h"
+// cppcheck-suppress missingInclude
 #include "ui_MainWindow.h"
 
 MainWindow::MainWindow(QWidget *parent) :

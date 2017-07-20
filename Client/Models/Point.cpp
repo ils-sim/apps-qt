@@ -25,6 +25,7 @@ bool Point_t::isZerro() const
 	return Latitude == 0.0 && Longitude == 0.0;
 }
 
+// cppcheck-suppress unusedFunction
 void Point_t::setZerro()
 {
 	Latitude = 0.0;

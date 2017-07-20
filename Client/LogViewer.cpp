@@ -2,11 +2,13 @@
 
 using namespace std;
 
-//#include "PluginObserver.h"
+#include <boost/shared_ptr.hpp>
+
+#include "Models/Model.h"
+#include "PluginObserver.h"
 #include "LogViewer.h"
 
-LogViewer::LogViewer()
-//	: PluginInterface("LogViewer")
+LogViewer::LogViewer(MainInterface_t * interface)
+	: PluginObserver_t("LogViewer", interface)
 {
-
 }

@@ -10,7 +10,7 @@ before_install:
 script:
   - docker run -t -i -v $PWD:/src -w /src ilssim/main /bin/bash -c 'cd common/protocol && ./build.sh'
   - docker run -t -i -v $PWD:/src -w /src ilssim/main /bin/bash -c 'mkdir -p build && cd build && cmake -G "Unix Makefiles" .. && make -j`grep -c ^processor /proc/cpuinfo`'
-  - docker run -t -i -v $PWD:/src -w /src ilssim/main /bin/bash scripts/do_cppcheck.sh
+  - docker run -t -i -v $PWD:/src -w /src ilssim/main /bin/bash -c './do_cppcheck.sh'
 
 notifications:
   hipchat:

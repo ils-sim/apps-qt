@@ -27,11 +27,43 @@ INCLUDEPATH += ../common/src/ ../models ../plugins
 DEPENDPATH += ../common/src/ ../models ../plugins
 
 SOURCES += main.cpp \
-    MainWindow.cpp
+    MainWindow.cpp \
+    LogViewer.cpp \
+    MainInterface.cpp \
+    PluginObserver.cpp \
+    Models/Car.cpp \
+    Models/CarPosition.cpp \
+    Models/CarStatus.cpp \
+    Models/CarType.cpp \
+    Models/CarUpdate.cpp \
+    Models/ControlCenter.cpp \
+    Models/Emergency.cpp \
+    Models/Point.cpp \
+    Models/Station.cpp \
+    Models/StationType.cpp \
+    Models/User.cpp
 
 HEADERS  += \
-    MainWindow.h
+    MainWindow.h \
+    LogViewer.h \
+    MainInterface.h \
+    PluginObserver.h \
+    Models/Car.h \
+    Models/CarPosition.h \
+    Models/CarStatus.h \
+    Models/CarType.h \
+    Models/CarUpdate.h \
+    Models/ControlCenter.h \
+    Models/Emergency.h \
+    Models/Model.h \
+    Models/Point.h \
+    Models/Station.h \
+    Models/StationType.h \
+    Models/User.h
 
 FORMS    += \
     MainWindow.ui
+
+SUBDIRS += \
+    Models/models.pro
 

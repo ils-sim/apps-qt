@@ -78,6 +78,11 @@ public:
 
 	}
 
+	virtual string ToString() const
+	{
+		return "Model_t";
+	}
+
 private:
 	Model_Type_t mType;
 };

@@ -10,7 +10,7 @@ public:
 	explicit CarPosition_t(Point_t & _Position);
 	virtual ~CarPosition_t();
 
-	string ToString() const;
+	virtual string ToString() const;
 };
 
 #endif // CARPOSITION_H

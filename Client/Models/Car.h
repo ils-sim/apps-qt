@@ -12,7 +12,7 @@ public:
 
 	Car_t(unsigned int _id, string & _Callsign, boost::shared_ptr<Station_t> _pStation, boost::shared_ptr<CarType_t> _pType);
 	virtual ~Car_t();
-	string ToString() const;
+	virtual string ToString() const;
 };
 
 #endif // CAR_H

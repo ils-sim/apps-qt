@@ -11,7 +11,7 @@ public:
 	ControlCenter_t(unsigned int _id, string & _Name, boost::shared_ptr<list<Station_t>> _pStations);
 	virtual ~ControlCenter_t();
 
-	string ToString() const;
+	virtual string ToString() const;
 };
 
 #endif // CONTROLCENTER_H

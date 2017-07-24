@@ -10,7 +10,7 @@ public:
 	User_t(unsigned int _id, string & _Name);
 	virtual ~User_t();
 
-	string ToString() const;
+	virtual string ToString() const;
 };
 
 #endif // USER_H

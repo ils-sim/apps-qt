@@ -11,7 +11,7 @@ public:
 	CarType_t(unsigned int _id, string & _Name, string & _ShortName);
 	virtual ~CarType_t();
 
-	string ToString() const;
+	virtual string ToString() const;
 };
 
 #endif // CARTYPE_H

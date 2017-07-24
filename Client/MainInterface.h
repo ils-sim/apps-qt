@@ -17,14 +17,11 @@ public:
 
 	void Attache(PluginObserver_t * observer);
 
-	virtual void Send(boost::shared_ptr<Model_t> pPackage) = 0;
+	virtual void Send(boost::shared_ptr<Model_t> pPackage);
 
 	volatile ConnectionStatus_t isConnected;
 
 	virtual ~MainInterface_t();
-
-protected:
-	void Received_Package(boost::shared_ptr<Model_t> pPackage);
 
 private:
 	vector<PluginObserver_t*> mObservers;

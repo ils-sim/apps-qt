@@ -16,7 +16,7 @@ public:
 
 	virtual ~CarUpdate_t();
 
-	string ToString() const;
+	virtual string ToString() const;
 };
 
 #endif // CARUPDATE_H

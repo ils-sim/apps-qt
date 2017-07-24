@@ -15,7 +15,7 @@ public:
 	bool isZerro() const;
 	void setZerro();
 
-	string ToString() const;
+	virtual string ToString() const;
 };
 
 #endif // POINT_H

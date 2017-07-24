@@ -17,7 +17,7 @@ public:
 				/*DateTime _CallTime, DateTime _EndTime,*/ boost::shared_ptr<ControlCenter_t> _pCenter);
 	virtual ~Emergency_t();
 
-	string ToString() const;
+	virtual string ToString() const;
 };
 
 #endif // EMERGENCY_H

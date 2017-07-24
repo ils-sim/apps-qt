@@ -14,7 +14,7 @@ public:
 			  boost::shared_ptr<list<Car_t>> _pCars);
 	virtual ~Station_t();
 
-	string ToString() const;
+	virtual string ToString() const;
 };
 
 #endif // STATION_H

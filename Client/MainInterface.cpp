@@ -19,9 +19,10 @@ MainInterface_t::MainInterface_t()
 void MainInterface_t::Attache(PluginObserver_t * observer)
 {
 	mObservers.push_back(observer);
+	isConnected = Connected;
 }
 
-void MainInterface_t::Received_Package(boost::shared_ptr<Model_t> pPackage)
+void MainInterface_t::Send(boost::shared_ptr<Model_t> pPackage)
 {
 	Log::GetInstance()->WriteDebug("Client_Interface::Received_Package");
 	for(vector<PluginObserver_t*>::iterator iter = mObservers.begin(); iter != mObservers.end(); ++iter)

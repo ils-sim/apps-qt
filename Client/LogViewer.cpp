@@ -9,7 +9,7 @@ using namespace std;
 #include "PluginObserver.h"
 #include "LogViewer.h"
 
-LogViewer::LogViewer(string loggerName, MainInterface_t * interface)
+LogViewer::LogViewer(string const & loggerName, MainInterface_t * const interface)
 	: PluginObserver_t("LogViewer", interface), mLoggerName(loggerName)
 {
 }

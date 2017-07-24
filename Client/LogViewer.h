@@ -4,7 +4,7 @@
 class LogViewer : public PluginObserver_t
 {
 public:
-	explicit LogViewer(string loggerName, MainInterface_t * interface);
+	explicit LogViewer(string const & loggerName, MainInterface_t * const interface);
 
 	void Received_Package(boost::shared_ptr<Model_t> pModel);
 

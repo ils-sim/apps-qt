@@ -9,7 +9,7 @@ using namespace std;
 #include "MainInterface.h"
 #include "PluginObserver.h"
 
-PluginObserver_t::PluginObserver_t(string const & Name, MainInterface_t * interface)
+PluginObserver_t::PluginObserver_t(string const & Name, MainInterface_t * const interface)
 	: mpInterface(interface), mPluginName(Name)
 {
 	interface->Attache(this);
